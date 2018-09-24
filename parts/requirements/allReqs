@@ -1,0 +1,18 @@
+● Enter an element.
+
+● Enter a constraint.
+● Remove an element.
+● Remove a constraint.
+● Given elements and constraints, display a graphical representation as a graph (you can
+use the freely available graph visualization software ​ Graphviz​ for that purpose).
+● Produce a topological sort if it exists.
+● If there is a cycle, document it, and produce a topological sort of the non-cyclical part.
+This description of the functions is general and has to be made precise as part of the
+requirements document (cf. Milestone 1).
+Possible bonus functions, subject to the same observation:
+● If there is a cycle, display it graphically.
+● Provide a textual user interface for the modification operations (such as the first four
+above, adding/removing elements/constraints).
+● Provide a graphical UI for them (hint: consider the EiffelVision library).
+● And any cute idea that you may have of fancy things to add (as long as the basics as
+outlined above are covered)!

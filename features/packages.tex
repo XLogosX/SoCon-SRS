@@ -1,0 +1,59 @@
+% toc styles
+\usepackage{titletoc}
+
+% \dottedcontents{<section>}[<left>]{<above-code>}
+% {<label width>}{<leader width>}
+%ç\dottedcontents{section}[0em]{\bfseries}{2.9em}{1pc}
+%\dottedcontents{subsection}[0em]{}{3.3em}{1pc}
+
+% center the toc heading
+%\renewcommand{\contentsname}{\centering Contents}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+%\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+
+\RequirePackage{tocloft}
+    % avoid page numbers being right-aligned in fixed-size box
+    \newlength{\newnumberwidth}
+    \settowidth{\newnumberwidth}{999} % yields overfull hbox warnings for pages > 999
+    \cftsetpnumwidth{\newnumberwidth}
+
+    % have the bib neatly positioned after the rest
+    \newlength{\beforebibskip}
+    \setlength{\beforebibskip}{0em}
+
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+% required packages
+\usepackage{pgfplots}
+\usepackage{pgf-umlcd}		% Klassendiagramm
+\usepackage{pgf-umlsd}		% Sequenzdiagramm
+\usepackage{pgfopts}
+\usepackage{pbox,tikz}
+\usepackage{tikzscale}
+\usetikzlibrary{shapes,shadows,arrows}
+\usetikzlibrary{calc}
+\usepackage{amsthm}
+\usepackage{pdflscape}
+\usepackage{colortbl}
+\usepackage{biblatex}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage[official]{eurosym}
+\usepackage{hyperref}
+\usepackage{enumitem,amssymb}
+\usepackage{etoolbox}
+\usepackage{tocloft}
+\usepackage{array}
+\usepackage{float}
+\usepackage{nameref}
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage{hyphsubst}
+\HyphSubstLet{ngerman=ngerman-x-latest}{ngerman}
+\DeclareRobustCommand{\officialeuro}{\ifmmode\expandafter\text\fi{\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+\newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
+\usepackage{refcount}

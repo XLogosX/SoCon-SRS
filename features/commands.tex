@@ -1,0 +1,52 @@
+% Full reference with number and name
+\newcommand{\refAll}[1]{~\ref{#1} - \textit{\nameref{#1}}}
+% **************************************
+% Symbol Commands:
+% **************************************
+
+% **************************************
+% - checkBox
+%   usage:
+%      \checkBox{0} prints an empty checkbox
+%      \checkBox{1} prints a filled checkbox
+% **************************************
+\newcommand{\checkBox}[1]{
+    \ifnumequal{#1}{1}{$\boxtimes$}{$\square$}
+}
+
+% **************************************
+% Table Helpers:
+% **************************************
+
+% **************************************
+% - auto numbering of table rows
+%   usage:
+%      before using the auto numbering use the \resetTabCtr to reset the numbering
+%      in each row use the \rownr command to automatically print the number
+% **************************************
+\newcounter{magicrownumber}
+\newcommand\rownr{\stepcounter{magicrownumber}\arabic{magicrownumber}}
+\newcommand{\resetTabCtr}{\setcounter{magicrownumber}{0}}
+
+% **************************************
+% - auto numbering of requirements
+%   usage:
+%      before using the auto numbering use the \resetReqCtr to reset the numbering
+%      in each row use the \reqnr command to automatically print the number
+% **************************************
+\newcounter{requirementCtr}
+\newcommand\reqnr{\refstepcounter{requirementCtr}\arabic{requirementCtr}}
+\newcommand{\resetReqCtr}{\setcounter{requirementCtr}{0}}
+%\newcommand{\refreq}[1]{\refstepcounter{requirementCtr}\label{#1}}
+\newcommand{\refreq}{\arabic{requirementCtr}}
+% **************************************
+% - auto numbering of requirements
+%   usage:
+%      before using the auto numbering use the \resetReqCtr to reset the numbering
+%      in each row use the \reqnr command to automatically print the number
+% **************************************
+
+% - pre defined color for a whole row
+\newcommand{\rowCol}{\rowcolor{gray}}
+% - pre defined color for a cell
+\newcommand{\cellCol}{\cellcolor{gray}}

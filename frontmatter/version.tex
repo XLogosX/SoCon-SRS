@@ -1,0 +1,19 @@
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.3\hsize}X}
+
+\begingroup
+   \setlength{\tabcolsep}{10pt} % Default value: 6pt
+   \renewcommand{\arraystretch}{1.5} % Default value: 1
+   \begin{table}[H]
+      \begin{tabularx}{\textwidth}{sssbs}
+         \arrayrulecolor{gray}%\cline{1-5}
+         \rowcolor{lightgray}
+         Version & Datum 	    & Autor		    & Bemerkung        				& Status \\% \cline{1-5}
+         0.1.0   & 24.09.2018   & WOA \& PUN	& First draft		            & Done   \\ \cline{1-5}
+         0.2.0   & .09.2018     & 	        &                               	& Done   \\ \cline{1-5}
+         0.3.0   & .09.2018     & 	        &                                   & Done   \\ \cline{1-5}
+         0.4.0   & .09.2018     & 	        &                                   & Done   \\ \cline{1-5}
+         1.0.0   & .09.2018     & 	        & Final Version                     & Done   \\ \cline{1-5}
+      \end{tabularx}
+   \end{table}
+\endgroup
