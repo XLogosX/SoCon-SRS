@@ -9,7 +9,7 @@
 %\renewcommand{\contentsname}{\centering Contents}
 
 \input{features/packages}
-\usepackage[toc,acronym,nopostdot,nonumberlist]{glossaries}
+\usepackage[style=treegroup,toc,acronym,nopostdot,nonumberlist]{glossaries}
 \makeglossaries
 
 \setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
@@ -43,20 +43,13 @@
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section*{Revision History}
 \input{parts/introduction/intro}
+\newpage
 \input{parts/overallDescription/ovDesc}
-%\input{parts/priorityDescription/prioDesc}
+\newpage
 \input{parts/requirements/requirements}
+\newpage
 \input{parts/supportingInformation/supInf}
-%\section{Requirements}
-%\section{Introduction}
-%\section{Purpose}
-%\section{Project Scope and Product Features}
-%\section{References}
-%\section{Overall Description}
-%\section{Product Perspective}
-%\section{User Classes and Characteristics}
 
 \newpage
 %\bibliographystyle{plain}
