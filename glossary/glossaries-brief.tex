@@ -1,0 +1,16 @@
+% glossary entries
+\newglossaryentry{projname}{name={ToPo-X-Sort},description={ToPo-X-Sort is a library implementing the topological sort algorithm and represents the Project name}}
+\newglossaryentry{element}{name=Element,description={An element is a representation of a Task or Action, which is to be performed}}
+\newglossaryentry{constraint}{name=Constraint,description={A constraint is a rule or limitation on when an element is to be performed}}
+\newglossaryentry{srsg}{name={SRS},description={A document defining the specifications for a Project or Component. Such a document is written for a specific group of relevant stakeholders}}
+\newglossaryentry{stakeholder}{name={Stakeholder},description={A group or person, which holds certain intressts regarding the project}}
+
+% abbreviations
+\newacronym[see={[Glossary:]{srs}}]{srs}{SRS}{Software Requirements Specification (see Glossary \gls{srsg}) \glsadd{srsg}}
+
+\glsaddall
+\renewcommand{\glossarysection}[2][]{\vspace*{0.5em}\subsubsection*{#1}\hrule\vspace*{1em}
+}
+
+%\printglossary[type=\acronymtype]
+%\printglossary

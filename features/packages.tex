@@ -15,7 +15,23 @@
 
 % required packages
 \usepackage{colortbl}
-\usepackage{biblatex}
+
+\usepackage[english]{babel}
+
+\usepackage[
+    backend=biber, %instead of bibtex
+    bibencoding=ascii,%
+    language=auto,%
+%    style=apa,%
+%    style=ieee,%
+    style=authoryear-icomp,
+    citestyle=authoryear-icomp,
+    sorting=nyt, % name, year, title
+    maxbibnames=10, % default: 3, et al.
+    natbib=true % natbib compatibility mode (\citep and \citet still work)
+]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -27,3 +43,4 @@
 \DeclareRobustCommand{\officialeuro}{\ifmmode\expandafter\text\fi{\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
 \newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
 \usepackage{refcount}
+\usepackage{tocloft}

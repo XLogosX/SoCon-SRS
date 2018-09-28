@@ -1,8 +1,8 @@
 ● Enter an element.
-
 ● Enter a constraint.
 ● Remove an element.
 ● Remove a constraint.
+
 ● Given elements and constraints, display a graphical representation as a graph (you can
 use the freely available graph visualization software ​ Graphviz​ for that purpose).
 ● Produce a topological sort if it exists.
