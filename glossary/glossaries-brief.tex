@@ -1,16 +1,28 @@
 % glossary entries
-\newglossaryentry{projname}{name={ToPo-X-Sort},description={ToPo-X-Sort is a library implementing the topological sort algorithm and represents the Project name}}
-\newglossaryentry{element}{name=Element,description={An element is a representation of a Task or Action, which is to be performed}}
-\newglossaryentry{constraint}{name=Constraint,description={A constraint is a rule or limitation on when an element is to be performed}}
+\newglossaryentry{projname}{name={\projName},description={\projName\ is a library implementing the topological sort algorithm and represents the Project name}}
+\newglossaryentry{element}{name=Element,text=element,description={An element is a representation of a Task or Action, which is to be performed}}
+\newglossaryentry{constraint}{name=Constraint,text=constraint,description={A constraint is a rule or limitation on when an element is to be performed}}
 \newglossaryentry{srsg}{name={SRS},description={A document defining the specifications for a Project or Component. Such a document is written for a specific group of relevant stakeholders}}
-\newglossaryentry{stakeholder}{name={Stakeholder},description={A group or person, which holds certain intressts regarding the project}}
+\newglossaryentry{stakeholder}{name={Stakeholder},description={A group or person, which holds certain interests regarding the project}}
 \newglossaryentry{graph}{name=Graph,description={ToDo}}
 \newglossaryentry{cycle}{name=Cycle,description={ToDo}}
 \newglossaryentry{cyclegraph}{name=Cycle Graph,description={ToDo}}
 \newglossaryentry{topological sort}{name=Topological Sort,description={ToDo}}
+\newglossaryentry{solidg}{name=S.O.L.I.D.,description={is a mnemonic acronym for five design principles intended to make software designs more understandable, flexible and maintainable}}
 
-% abbreviations
+\newglossaryentry{vcsg}{name={Version control system},text={version control system},description={System to persist and track source code changes}}
+\newglossaryentry{gitg}{name={git},description={Decentralized \gls{vcsg}}}
+
+% acronyms
 \newacronym[see={[Glossary:]{srs}}]{srs}{SRS}{Software Requirements Specification (see Glossary \gls{srsg}) \glsadd{srsg}}
+\newacronym{srp}{SRP}{Single responsibility principle}
+\newacronym{ocp}{OCP}{Open/closed principle}
+\newacronym{lsp}{LSP}{Liskov substitution principle}
+\newacronym{isp}{ISP}{Interface segregation principle}
+\newacronym{dip}{DIP}{Dependency inversion principle}
+\newacronym[see={[Glossary:]{solidg}}]{solid}{S.O.L.I.D.}{\gls{srp}, \gls{ocp}, \gls{lsp} and \gls{dip} (see Glossary \gls{solidg}) \glsadd{solidg}}
+\newacronym{oop}{OOP}{Object-oriented programming}
+\newacronym[see={[Glossary:]{vcsg}}]{vcs}{VCS}{Version control system (see Glossary \gls{vcsg})\glsadd{vcsg}}
 
 \glsaddall
 \renewcommand{\glossarysection}[2][]{\vspace*{0.5em}\subsubsection*{#1}\hrule\vspace*{1em}

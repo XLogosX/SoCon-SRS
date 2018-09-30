@@ -3,13 +3,11 @@ The following table defines how a requirement should be specified:
 \input{parts/requirements/reqExample}
 \subsection{External Interfaces}
 \subsection{Functional Requirements}
+\newcommand{\preFix}{F-}
 \input{parts/requirements/req1}
 \input{parts/requirements/req2}
 \input{parts/requirements/req3}
 \input{parts/requirements/req4}
-\subsection{Performance Requiremenets}
-\subsection{Maintainability}
-\subsection{Design Constraints}
 % High
 \input{parts/requirements/req5}
 \input{parts/requirements/req6}
@@ -19,3 +17,12 @@ The following table defines how a requirement should be specified:
 \input{parts/requirements/req9}
 \input{parts/requirements/req10}
 \input{parts/requirements/req11}
+\subsection{Performance Requirements}
+\renewcommand{\preFix}{P-}
+\input{parts/requirements/performanceRequirements/perfReqs}
+\subsection{Maintainability}
+\renewcommand{\preFix}{M-}
+\input{parts/requirements/maintainability/maintReqs}
+\subsection{Design Constraints}
+\renewcommand{\preFix}{D-}
+\input{parts/requirements/designConstraints/desReqs}

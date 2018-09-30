@@ -1,7 +1,7 @@
 \section{Introduction}
 \subsection{Purpose}
-This document represents the \gls{srsg} for the \gls{projname}. It is designed and written for the stake holders, such as the teaching assistands, professors and developers involved in the project. Its
-pupose is to descripe the scope, both of the functional and non-functional software requirements, as well as the design constraints of the whole \gls{projname} component.
+This document represents the \gls{srsg} for the \gls{projname}. It is designed and written for the stake holders, such as the teaching assistants, professors and developers involved in the project. Its
+purpose is to describe the scope, both of the functional and non-functional software requirements, as well as the design constraints of the whole \gls{projname} component.
 \subsection{Scope}
 \subsection{Definitions, Acronyms and Abbreviations}
 \printglossary[type=\acronymtype]
@@ -10,3 +10,9 @@ pupose is to descripe the scope, both of the functional and non-functional softw
 \defcitealias{IEEE830:1998}{IEEE Standard 830-1998}\citetalias{IEEE830:1998}(\cite{IEEE830:1998})
 
 \subsection{Overview}
+In our daily lives, we perform various tasks, be it at home or at work or elsewhere. Many tasks can be carried out independently of other tasks. For example, it usually does not matter whether we first clean the kitchen or the bathroom. Other tasks, however, must occur in a certain order.
+For example, you probably do not want to first put on your shoes and then your socks. The aim of this project is to create an Eiffel library called AutoTasks which allows you to specify tasks and ordering constraints between them, and to produce task orderings compatible with the constraints. Apart from the library, your delivered software must also include five example programs (with sample input data) using the library to define correct task orderings.
+To create these task orderings, you will have to implement the topological sort. There are two different underlying algorithms for the topological sort, Kahn’s algorithm and depth-first search. You
+can use whichever you prefer, but only Kahn’s algorithm will be studied in the lectures.\\~\\
+\textbf{Library}\\
+The target domain contains “elements” (called “tasks” above, but the scope is more general) and “constraints”. A constraint is of the form <e1, e2> for two elements e1 and e2. The meaning of such a constraint, particularly in the case of tasks, is: “e1 must come before e2”. The input to the topological sort consists of the elements and the constraints. The output of the topological sort is a list of the elements in an order that respects the constraints.

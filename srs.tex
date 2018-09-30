@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \input{features/packages}
+\input{preDefinedWords}
 
 \usepackage[style=treegroup,nolist,toc,acronym,nopostdot,nonumberlist,shortcuts]{glossaries}
 \makeglossaries
@@ -11,7 +12,9 @@
 \input{features/commands}
 \input{features/customColTypes}
 \input{features/customColors}
+\input{features/listEnv}
 \input{metaData}
+\def\sectionautorefname{Section}
 
 \title{\myTitle}								% Title
 \author{\allAuthorsShort}
